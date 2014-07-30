@@ -1,0 +1,138 @@
+// Brand colors
+// -------------------------
+@brand-primary: #80ba26;
+@brand-success: #51a351;
+@brand-warning: #f89406;
+@brand-danger: #bd362f;
+@brand-info: #0088cc;
+@brand-dark: #333;  // custom brand colour (not in bootstrap)
+
+// Scaffolding
+// -------------------------
+@body-bg: #e7e7e7;
+@text-color: @brand-dark;
+
+// Typography
+// -------------------------
+@font-family-sans-serif: "VAGRounded", Helvetica, Arial, sans-serif;
+
+// Buttons
+// -------------------------
+@btn-primary-border: @brand-primary;
+
+@btn-success-border: @brand-success;
+
+@btn-warning-border: @brand-warning;
+
+@btn-danger-border: @brand-danger;
+
+@btn-info-border: @brand-info;
+
+@btn-dark-color:              #fff;
+@btn-dark-bg:                 @brand-dark;
+@btn-dark-border:             darken(@btn-dark-bg, 5%);
+
+
+.btn-dark {
+  .button-variant(@btn-dark-color; @btn-dark-bg; @btn-dark-border);
+}
+
+
+.btn {
+  &:hover,
+  &focus {
+    border: 1px solid transparent;
+  }
+}
+
+
+// Links
+// -------------------------
+
+@link-hover-color:        @brand-primary;
+
+
+// Grid system
+// -------------------------
+@container-vert-padding: 10px;
+
+.container {
+  padding-top: @container-vert-padding;
+  padding-bottom: @container-vert-padding;
+}
+
+
+// Wells
+// -------------------------
+@well-bg:                     #fff;
+@well-border-colour:          #e3e3e3;
+
+.well {
+  border-color: @well-border-colour;
+}
+
+
+// Tabs
+// --------------------------
+@nav-link-padding:                          5px 15px;
+
+@nav-link-hover-bg:                         darken(@body-bg, 20%);
+@nav-tabs-link-hover-border-color:          @nav-link-hover-bg;
+
+@nav-tabs-border-color:                     @well-border-colour;
+
+@nav-tabs-active-link-hover-bg:             @brand-dark;
+@nav-tabs-active-link-hover-color:          #fff;
+@nav-tabs-active-link-hover-border-color:   @brand-dark;
+
+.nav-tabs {
+  > li {
+    > a {
+      background-color:                     darken(@body-bg, 10%);
+      color:                                @text-color;
+
+      &:hover {
+        cursor:                             pointer;
+        border-bottom-color:                darken(@body-bg, 10%);
+      }
+    }
+  }
+}
+
+// Tables
+// --------------------------
+@table-bg:                           darken(@body-bg, 2%);
+@table-border-color:                 #fff;
+@table-bg-hover:                     darken(@table-bg, 5%);;
+
+.table {
+  > thead {
+    background-color: #fff;
+  }
+
+  > thead,
+  > tbody,
+  > tfoot {
+    > tr {
+      > th,
+      > td {
+        border-top-width: 2px;
+        max-width: 200px;
+        word-wrap: break-word;
+        word-break: break-all;
+        &.alert-url {
+          max-width: 450px;
+        }
+      }
+    }
+    > tr:hover {
+      &.clickable {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.alert.before-field {
+  margin-bottom: 10px;
+}

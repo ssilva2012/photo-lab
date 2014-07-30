@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="photo-lab:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="photo-lab-0.0.1-SNAPSHOT.war">
+      <element id="artifact" artifact-name="photo-lab:war exploded" />
+    </root>
+  </artifact>
+</component>
