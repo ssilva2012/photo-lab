@@ -67,24 +67,24 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<start-class>au.com.vastech.photolab.Application</start-class>
-		<java.version>1.7</java.version>
-        <!-- Default Cobertura config -->
-        <cobertura.haltOnFailure>false</cobertura.haltOnFailure>
+
+        <java.version>1.7</java.version>
+        <cobertura-maven-plugin.version>2.6</cobertura-maven-plugin.version>
+        <maven-checkstyle-plugin.version>2.12.1</maven-checkstyle-plugin.version>
+        <findbugs-maven-plugin.version>3.0.0</findbugs-maven-plugin.version>
+
         <cobertura.totalLineRate>95</cobertura.totalLineRate>
         <cobertura.totalBranchRate>95</cobertura.totalBranchRate>
         <cobertura.packageLineRate>95</cobertura.packageLineRate>
         <cobertura.packageBranchRate>95</cobertura.packageBranchRate>
 
-        <findbugs.skip>false</findbugs.skip>
-
-        <!-- Default checkstyle -->
+        <cobertura.haltOnFailure>false</cobertura.haltOnFailure>
         <checkstyle.failsOnError>true</checkstyle.failsOnError>
-        <checkstyle.skip>false</checkstyle.skip>
+        <findbug.failsOnError>true</findbug.failsOnError>
 
-        <cobertura-maven-plugin.version>2.6</cobertura-maven-plugin.version>
-        <maven-checkstyle-plugin.version>2.11</maven-checkstyle-plugin.version>
-        <findbugs-maven-plugin.version>2.5.3</findbugs-maven-plugin.version>
         <skipTests>false</skipTests>
+        <findbugs.skip>false</findbugs.skip>
+        <checkstyle.skip>false</checkstyle.skip>
 
 	</properties>
 
@@ -142,7 +142,7 @@
                 <version>${findbugs-maven-plugin.version}</version>
                 <configuration>
                     <skip>${findbugs.skip}</skip>
-                    <failOnError>true</failOnError>
+                    <failOnError>${findbug.failsOnError}</failOnError>
                     <findbugsXmlOutputDirectory>${project.build.directory}/findbugs</findbugsXmlOutputDirectory>
                 </configuration>
                 <executions>

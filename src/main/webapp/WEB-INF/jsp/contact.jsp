@@ -4,12 +4,12 @@
 <head>
     <%--<link href="/resources/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">--%>
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <title>Rods-Lab</title>
+    <title>Contact Us</title>
 </head>
 <body>
     <layout:header/>
     <div class="container">
-        <h1>This is home page and to be available</h1>
+        <h1>This is contact page and to be available</h1>
     </div>
 </body>
 </html>
