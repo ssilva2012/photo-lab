@@ -3,12 +3,14 @@
 <header>
     <div class="container">
         <div class="masthead">
-            <h3 class="text-muted">Rods Photo Lab</h3>
-            <ul class="nav nav-justified">
+            <div class="logo">
+                <img src="resources/img/logo.jpeg">
+            </div>
+            <ul class="nav nav-justified navbar-inverse">
                 <li class="active"><a href="${pageContext.request.contextPath}/home">Home</a></li>
-                <li><a href="#">portfolio</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Articles</a></li>
+                <li><a href="${pageContext.request.contextPath}/portfolio">Portfolio</a></li>
+                <li><a href="${pageContext.request.contextPath}/services">Services</a></li>
+                <li><a href="${pageContext.request.contextPath}/articles">Articles</a></li>
                 <li><a href="${pageContext.request.contextPath}/contact">Contact</a></li>
             </ul>
         </div>

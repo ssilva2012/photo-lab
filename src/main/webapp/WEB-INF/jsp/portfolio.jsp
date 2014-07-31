@@ -10,7 +10,7 @@
 <body>
     <layout:header/>
     <div class="container">
-        <h1>This is contact page and to be available</h1>
+        <h1>This is portfolio page and to be available</h1>
     </div>
 </body>
 </html>

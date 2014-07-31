@@ -21,4 +21,19 @@ public class NavigationController {
     public String contact() {
         return "contact";
     }
+
+    @RequestMapping("/services")
+    public String services() {
+        return "services";
+    }
+
+    @RequestMapping("/articles")
+    public String articles() {
+        return "articles";
+    }
+
+    @RequestMapping("/portfolio")
+    public String portfolio() {
+        return "portfolio";
+    }
 }
